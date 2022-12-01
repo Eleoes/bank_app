@@ -1,4 +1,5 @@
 import styles from './style';
+import { Billing, Business, CardDeal, Clients, CTA, Footer, Navbar, Stats, Testimonials, Hero } from "./components";
 
 const App = () => (
 
@@ -6,28 +7,28 @@ const App = () => (
     {/* NAVBAR */}
     <div className={`${styles.paddingX} ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}>
-        Navbar here
+        <Navbar />
       </div>
     </div>
 
     {/* HERO */}
     <div className={`bg-primary ${styles.flexStart}`}>
       <div className={`${styles.boxWidth}`}>
-        Hero here
+        <Hero />
       </div>
     </div>
 
     {/* CONTENT */}
     <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
       <div className={`${styles.boxWidth}`}>
-        Statistics 
-        Business 
-        Billing 
-        CardDeal 
-        Testimonials 
-        Clients 
-        CTA 
-        Footer
+        <Stats />
+        <Business /> 
+        <Billing /> 
+        <CardDeal /> 
+        <Testimonials /> 
+        <Clients /> 
+        <CTA /> 
+        <Footer />
       </div>
     </div>
   </div>
